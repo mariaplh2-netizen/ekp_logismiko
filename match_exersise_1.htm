@@ -955,9 +955,9 @@ function ClearTextBoxes(){
 
 var CorrectIndicator = '&#x2714;';
 var IncorrectIndicator = '&#x2718;';
-var YourScoreIs = 'Your score is ';
-var CorrectResponse = 'Correct! Well done.';
-var IncorrectResponse = 'Sorry! Try again. ';
+var YourScoreIs = '&#x03A4;&#x03BF; &#x03C3;&#x03BA;&#x03BF;&#x03C1; &#x03C3;&#x03BF;&#x03C5; &#x03B5;&#x03AF;&#x03BD;&#x03B1;&#x03B9;:';
+var CorrectResponse = '&#x03A3;&#x03C9;&#x03C3;&#x03C4;&#x03AC;!!!';
+var IncorrectResponse = '&#x03A0;&#x03C1;&#x03BF;&#x03C3;&#x03C0;&#x03AC;&#x03B8;&#x03B7;&#x03C3;&#x03B5; &#x03BE;&#x03B1;&#x03BD;&#x03AC;...';
 var TotalUnfixedLeftItems = 0;
 var TotCorrectChoices = 0;
 var Penalties = 0;
@@ -1265,15 +1265,11 @@ function CheckAnswers(){
 <div class="NavButtonBar" id="TopNavBar">
 
 
-<button class="NavButton" onclick="history.back(); return false;">&lt;=</button>
 
 
-
-<button class="NavButton" onclick="location='index.htm'; return false;"> &#x03A0;&#x03B5;&#x03C1;&#x03B9;&#x03B5;&#x03C7;&#x03CC;&#x03BC;&#x03B5;&#x03BD;&#x03B1; </button>
-
+<button class="NavButton" onclick="location='index.html'; return false;"> &#x0395;&#x03C0;&#x03B9;&#x03C3;&#x03C4;&#x03C1;&#x03BF;&#x03C6;&#x03AE; &#x03C3;&#x03C4;&#x03B7;&#x03BD; &#x03B1;&#x03C1;&#x03C7;&#x03B9;&#x03BA;&#x03AE; &#x03C3;&#x03B5;&#x03BB;&#x03AF;&#x03B4;&#x03B1; </button>
 
 
-<button class="NavButton" onclick="location='match_exersise_2.htm'; return false;">=&gt;</button>
 
 
 </div>
@@ -1285,14 +1281,14 @@ function CheckAnswers(){
 <div class="Titles">
 	<h2 class="ExerciseTitle">&#x0391;&#x03BD;&#x03C4;&#x03B9;&#x03C3;&#x03C4;&#x03BF;&#x03B9;&#x03C7;&#x03AF;&#x03C3;&#x03C4;&#x03B5; &#x03C4;&#x03B1; &#x03B5;&#x03C0;&#x03AF;&#x03C0;&#x03B5;&#x03B4;&#x03B1; &#x03C4;&#x03BF;&#x03C5; OSI &#x03BC;&#x03B5; &#x03C4;&#x03B9;&#x03C2; &#x03BB;&#x03B5;&#x03B9;&#x03C4;&#x03BF;&#x03C5;&#x03C1;&#x03B3;&#x03AF;&#x03B5;&#x03C2; &#x03C0;&#x03BF;&#x03C5; &#x03B5;&#x03BA;&#x03C4;&#x03B5;&#x03BB;&#x03BF;&#x03CD;&#x03BD;.</h2>
 
-	<h3 class="ExerciseSubtitle">Matching exercise</h3>
+	<h3 class="ExerciseSubtitle">&#x0386;&#x03C3;&#x03BA;&#x03B7;&#x03C3;&#x03B7; &#x0391;&#x03BD;&#x03C4;&#x03B9;&#x03C3;&#x03C4;&#x03BF;&#x03AF;&#x03C7;&#x03B9;&#x03C3;&#x03B7;&#x03C2;</h3>
 
 
 
 </div>
 
 <div id="InstructionsDiv" class="StdDiv">
-	<div id="Instructions">Match the items on the right to the items on the left.</div>
+	<div id="Instructions">&#x0391;&#x03BD;&#x03C4;&#x03B9;&#x03C3;&#x03C4;&#x03BF;&#x03B9;&#x03C7;&#x03AF;&#x03C3;&#x03C4;&#x03B5; &#x03C4;&#x03B1; &#x03B1;&#x03BD;&#x03C4;&#x03B9;&#x03BA;&#x03B5;&#x03AF;&#x03BC;&#x03B5;&#x03BD;&#x03B1; &#x03C4;&#x03B7;&#x03C2; &#x03B4;&#x03B5;&#x03BE;&#x03B9;&#x03AC;&#x03C2; &#x03C3;&#x03C4;&#x03AE;&#x03BB;&#x03B7;&#x03C2; &#x03BC;&#x03B5; &#x03C4;&#x03B1; &#x03B1;&#x03BD;&#x03C4;&#x03B9;&#x03BA;&#x03B5;&#x03AF;&#x03BC;&#x03B5;&#x03BD;&#x03B1; &#x03C4;&#x03B7;&#x03C2; &#x03B1;&#x03C1;&#x03B9;&#x03C3;&#x03C4;&#x03B5;&#x03C1;&#x03AE;&#x03C2; &#x03C3;&#x03C4;&#x03AE;&#x03BB;&#x03B7;&#x03C2;.</div>
 </div>
 <div id="ContainerDiv">
 
@@ -1300,7 +1296,7 @@ function CheckAnswers(){
 
 <div class="ExerciseContainer">
 
-<button id="CheckButton1" class="FuncButton" onclick="CheckAnswers()">&#160;Check&#160;</button>
+<button id="CheckButton1" class="FuncButton" onclick="CheckAnswers()">&#160;&#x0388;&#x03BB;&#x03B5;&#x03B3;&#x03C7;&#x03BF;&#x03C2;&#160;</button>
 
 <div id="MatchDiv" style="text-align: center;">
 
@@ -1310,13 +1306,13 @@ function CheckAnswers(){
 <td class="RightItem">
 <select onchange="JsonEx.AlignSelects(0)" id="R_0">
 <option value="-1">???</option>
-<option value="1" data-origPos="R_1">&#x039C;&#x03B5;&#x03C4;&#x03AC;&#x03C6;&#x03C1;&#x03B1;&#x03C3;&#x03B7;/&#x03BC;&#x03B5;&#x03C4;&#x03B1;&#x03C4;&#x03C1;&#x03BF;&#x03C0;&#x03AE;, &#x03C3;&#x03C5;&#x03BC;&#x03C0;&#x03AF;&#x03B5;&#x03C3;&#x03B7; &#x03B4;&#x03B5;&#x03B4;&#x03BF;&#x03BC;&#x03AD;&#x03BD;&#x03C9;&#x03BD;.</option>
-<option value="4" data-origPos="R_4">&#x039B;&#x03BF;&#x03B3;&#x03B9;&#x03BA;&#x03AE; &#x03B4;&#x03B9;&#x03B5;&#x03C5;&#x03B8;&#x03C5;&#x03BD;&#x03C3;&#x03B9;&#x03BF;&#x03B4;&#x03CC;&#x03C4;&#x03B7;&#x03C3;&#x03B7;, &#x03B4;&#x03C1;&#x03BF;&#x03BC;&#x03BF;&#x03BB;&#x03CC;&#x03B3;&#x03B7;&#x03C3;&#x03B7;</option>
-<option value="2" data-origPos="R_2">&#x0394;&#x03B9;&#x03B1;&#x03C7;&#x03B5;&#x03AF;&#x03C1;&#x03B9;&#x03C3;&#x03B7; &#x03C3;&#x03C5;&#x03BD;&#x03CC;&#x03B4;&#x03BF;&#x03C5;, &#x03B5;&#x03AF;&#x03C3;&#x03BF;&#x03B4;&#x03BF;&#x03C2;/&#x03AD;&#x03BE;&#x03BF;&#x03B4;&#x03BF;&#x03C2; &#x03C7;&#x03C1;&#x03AE;&#x03C3;&#x03C4;&#x03B7;.</option>
-<option value="0" data-origPos="R_0">&#x03A0;&#x03B1;&#x03C1;&#x03BF;&#x03C7;&#x03AE; &#x03C5;&#x03C0;&#x03B7;&#x03C1;&#x03B5;&#x03C3;&#x03B9;&#x03CE;&#x03BD; &#x03C3;&#x03C4;&#x03B9;&#x03C2; &#x03B5;&#x03C6;&#x03B1;&#x03C1;&#x03BC;&#x03BF;&#x03B3;&#x03AD;&#x03C2; &#x03C4;&#x03BF;&#x03C5; &#x03C7;&#x03C1;&#x03AE;&#x03C3;&#x03C4;&#x03B7;.</option>
-<option value="5" data-origPos="R_5">&#x03A6;&#x03C5;&#x03C3;&#x03B9;&#x03BA;&#x03AE; &#x03B4;&#x03B9;&#x03B5;&#x03C5;&#x03B8;&#x03C5;&#x03BD;&#x03C3;&#x03B9;&#x03BF;&#x03B4;&#x03CC;&#x03C4;&#x03B7;&#x03C3;&#x03B7;, &#x03B2;&#x03B1;&#x03C3;&#x03B9;&#x03BA;&#x03CC;&#x03C2; &#x03AD;&#x03BB;&#x03B5;&#x03B3;&#x03C7;&#x03BF;&#x03C2; &#x03C3;&#x03C6;&#x03B1;&#x03BB;&#x03BC;&#x03AC;&#x03C4;&#x03C9;&#x03BD;, &#x03B5;&#x03BA;&#x03C0;&#x03BF;&#x03BC;&#x03C0;&#x03AE;/&#x03BB;&#x03AE;&#x03C8;&#x03B7; &#x03C0;&#x03BB;&#x03B1;&#x03B9;&#x03C3;&#x03AF;&#x03C9;&#x03BD;.</option>
 <option value="3" data-origPos="R_3">&#x0395;&#x03C0;&#x03B9;&#x03BA;&#x03BF;&#x03B9;&#x03BD;&#x03C9;&#x03BD;&#x03AF;&#x03B1; &#x03B1;&#x03C0;&#x03CC; &#x03AC;&#x03BA;&#x03C1;&#x03BF; &#x03C3;&#x03B5; &#x03AC;&#x03BA;&#x03C1;&#x03BF; &#x03BC;&#x03B5;&#x03C4;&#x03B1;&#x03BE;&#x03CD; &#x03C0;&#x03C1;&#x03BF;&#x03B3;&#x03C1;&#x03B1;&#x03BC;&#x03BC;&#x03AC;&#x03C4;&#x03C9;&#x03BD;/&#x03B4;&#x03B9;&#x03B5;&#x03C1;&#x03B3;&#x03B1;&#x03C3;&#x03B9;&#x03CE;&#x03BD;.</option>
+<option value="2" data-origPos="R_2">&#x0394;&#x03B9;&#x03B1;&#x03C7;&#x03B5;&#x03AF;&#x03C1;&#x03B9;&#x03C3;&#x03B7; &#x03C3;&#x03C5;&#x03BD;&#x03CC;&#x03B4;&#x03BF;&#x03C5;, &#x03B5;&#x03AF;&#x03C3;&#x03BF;&#x03B4;&#x03BF;&#x03C2;/&#x03AD;&#x03BE;&#x03BF;&#x03B4;&#x03BF;&#x03C2; &#x03C7;&#x03C1;&#x03AE;&#x03C3;&#x03C4;&#x03B7;.</option>
+<option value="5" data-origPos="R_5">&#x03A6;&#x03C5;&#x03C3;&#x03B9;&#x03BA;&#x03AE; &#x03B4;&#x03B9;&#x03B5;&#x03C5;&#x03B8;&#x03C5;&#x03BD;&#x03C3;&#x03B9;&#x03BF;&#x03B4;&#x03CC;&#x03C4;&#x03B7;&#x03C3;&#x03B7;, &#x03B2;&#x03B1;&#x03C3;&#x03B9;&#x03BA;&#x03CC;&#x03C2; &#x03AD;&#x03BB;&#x03B5;&#x03B3;&#x03C7;&#x03BF;&#x03C2; &#x03C3;&#x03C6;&#x03B1;&#x03BB;&#x03BC;&#x03AC;&#x03C4;&#x03C9;&#x03BD;, &#x03B5;&#x03BA;&#x03C0;&#x03BF;&#x03BC;&#x03C0;&#x03AE;/&#x03BB;&#x03AE;&#x03C8;&#x03B7; &#x03C0;&#x03BB;&#x03B1;&#x03B9;&#x03C3;&#x03AF;&#x03C9;&#x03BD;.</option>
 <option value="6" data-origPos="R_6">&#x039A;&#x03C9;&#x03B4;&#x03B9;&#x03BA;&#x03BF;&#x03C0;&#x03BF;&#x03AF;&#x03B7;&#x03C3;&#x03B7; &#x03C3;&#x03B7;&#x03BC;&#x03AC;&#x03C4;&#x03C9;&#x03BD;, &#x03C6;&#x03C5;&#x03C3;&#x03B9;&#x03BA;&#x03AC; &#x03BC;&#x03AD;&#x03C3;&#x03B1;,<br />&#x03C3;&#x03C5;&#x03BD;&#x03B4;&#x03B5;&#x03C4;&#x03AE;&#x03C1;&#x03B5;&#x03C2; (connectors).</option>
+<option value="4" data-origPos="R_4">&#x039B;&#x03BF;&#x03B3;&#x03B9;&#x03BA;&#x03AE; &#x03B4;&#x03B9;&#x03B5;&#x03C5;&#x03B8;&#x03C5;&#x03BD;&#x03C3;&#x03B9;&#x03BF;&#x03B4;&#x03CC;&#x03C4;&#x03B7;&#x03C3;&#x03B7;, &#x03B4;&#x03C1;&#x03BF;&#x03BC;&#x03BF;&#x03BB;&#x03CC;&#x03B3;&#x03B7;&#x03C3;&#x03B7;</option>
+<option value="0" data-origPos="R_0">&#x03A0;&#x03B1;&#x03C1;&#x03BF;&#x03C7;&#x03AE; &#x03C5;&#x03C0;&#x03B7;&#x03C1;&#x03B5;&#x03C3;&#x03B9;&#x03CE;&#x03BD; &#x03C3;&#x03C4;&#x03B9;&#x03C2; &#x03B5;&#x03C6;&#x03B1;&#x03C1;&#x03BC;&#x03BF;&#x03B3;&#x03AD;&#x03C2; &#x03C4;&#x03BF;&#x03C5; &#x03C7;&#x03C1;&#x03AE;&#x03C3;&#x03C4;&#x03B7;.</option>
+<option value="1" data-origPos="R_1">&#x039C;&#x03B5;&#x03C4;&#x03AC;&#x03C6;&#x03C1;&#x03B1;&#x03C3;&#x03B7;/&#x03BC;&#x03B5;&#x03C4;&#x03B1;&#x03C4;&#x03C1;&#x03BF;&#x03C0;&#x03AE;, &#x03C3;&#x03C5;&#x03BC;&#x03C0;&#x03AF;&#x03B5;&#x03C3;&#x03B7; &#x03B4;&#x03B5;&#x03B4;&#x03BF;&#x03BC;&#x03AD;&#x03BD;&#x03C9;&#x03BD;.</option>
 </select>
 </td>
 <td> </td>
@@ -1325,13 +1321,13 @@ function CheckAnswers(){
 <td class="RightItem">
 <select onchange="JsonEx.AlignSelects(1)" id="R_1">
 <option value="-1">???</option>
-<option value="1" data-origPos="R_1">&#x039C;&#x03B5;&#x03C4;&#x03AC;&#x03C6;&#x03C1;&#x03B1;&#x03C3;&#x03B7;/&#x03BC;&#x03B5;&#x03C4;&#x03B1;&#x03C4;&#x03C1;&#x03BF;&#x03C0;&#x03AE;, &#x03C3;&#x03C5;&#x03BC;&#x03C0;&#x03AF;&#x03B5;&#x03C3;&#x03B7; &#x03B4;&#x03B5;&#x03B4;&#x03BF;&#x03BC;&#x03AD;&#x03BD;&#x03C9;&#x03BD;.</option>
-<option value="4" data-origPos="R_4">&#x039B;&#x03BF;&#x03B3;&#x03B9;&#x03BA;&#x03AE; &#x03B4;&#x03B9;&#x03B5;&#x03C5;&#x03B8;&#x03C5;&#x03BD;&#x03C3;&#x03B9;&#x03BF;&#x03B4;&#x03CC;&#x03C4;&#x03B7;&#x03C3;&#x03B7;, &#x03B4;&#x03C1;&#x03BF;&#x03BC;&#x03BF;&#x03BB;&#x03CC;&#x03B3;&#x03B7;&#x03C3;&#x03B7;</option>
-<option value="2" data-origPos="R_2">&#x0394;&#x03B9;&#x03B1;&#x03C7;&#x03B5;&#x03AF;&#x03C1;&#x03B9;&#x03C3;&#x03B7; &#x03C3;&#x03C5;&#x03BD;&#x03CC;&#x03B4;&#x03BF;&#x03C5;, &#x03B5;&#x03AF;&#x03C3;&#x03BF;&#x03B4;&#x03BF;&#x03C2;/&#x03AD;&#x03BE;&#x03BF;&#x03B4;&#x03BF;&#x03C2; &#x03C7;&#x03C1;&#x03AE;&#x03C3;&#x03C4;&#x03B7;.</option>
-<option value="0" data-origPos="R_0">&#x03A0;&#x03B1;&#x03C1;&#x03BF;&#x03C7;&#x03AE; &#x03C5;&#x03C0;&#x03B7;&#x03C1;&#x03B5;&#x03C3;&#x03B9;&#x03CE;&#x03BD; &#x03C3;&#x03C4;&#x03B9;&#x03C2; &#x03B5;&#x03C6;&#x03B1;&#x03C1;&#x03BC;&#x03BF;&#x03B3;&#x03AD;&#x03C2; &#x03C4;&#x03BF;&#x03C5; &#x03C7;&#x03C1;&#x03AE;&#x03C3;&#x03C4;&#x03B7;.</option>
-<option value="5" data-origPos="R_5">&#x03A6;&#x03C5;&#x03C3;&#x03B9;&#x03BA;&#x03AE; &#x03B4;&#x03B9;&#x03B5;&#x03C5;&#x03B8;&#x03C5;&#x03BD;&#x03C3;&#x03B9;&#x03BF;&#x03B4;&#x03CC;&#x03C4;&#x03B7;&#x03C3;&#x03B7;, &#x03B2;&#x03B1;&#x03C3;&#x03B9;&#x03BA;&#x03CC;&#x03C2; &#x03AD;&#x03BB;&#x03B5;&#x03B3;&#x03C7;&#x03BF;&#x03C2; &#x03C3;&#x03C6;&#x03B1;&#x03BB;&#x03BC;&#x03AC;&#x03C4;&#x03C9;&#x03BD;, &#x03B5;&#x03BA;&#x03C0;&#x03BF;&#x03BC;&#x03C0;&#x03AE;/&#x03BB;&#x03AE;&#x03C8;&#x03B7; &#x03C0;&#x03BB;&#x03B1;&#x03B9;&#x03C3;&#x03AF;&#x03C9;&#x03BD;.</option>
 <option value="3" data-origPos="R_3">&#x0395;&#x03C0;&#x03B9;&#x03BA;&#x03BF;&#x03B9;&#x03BD;&#x03C9;&#x03BD;&#x03AF;&#x03B1; &#x03B1;&#x03C0;&#x03CC; &#x03AC;&#x03BA;&#x03C1;&#x03BF; &#x03C3;&#x03B5; &#x03AC;&#x03BA;&#x03C1;&#x03BF; &#x03BC;&#x03B5;&#x03C4;&#x03B1;&#x03BE;&#x03CD; &#x03C0;&#x03C1;&#x03BF;&#x03B3;&#x03C1;&#x03B1;&#x03BC;&#x03BC;&#x03AC;&#x03C4;&#x03C9;&#x03BD;/&#x03B4;&#x03B9;&#x03B5;&#x03C1;&#x03B3;&#x03B1;&#x03C3;&#x03B9;&#x03CE;&#x03BD;.</option>
+<option value="2" data-origPos="R_2">&#x0394;&#x03B9;&#x03B1;&#x03C7;&#x03B5;&#x03AF;&#x03C1;&#x03B9;&#x03C3;&#x03B7; &#x03C3;&#x03C5;&#x03BD;&#x03CC;&#x03B4;&#x03BF;&#x03C5;, &#x03B5;&#x03AF;&#x03C3;&#x03BF;&#x03B4;&#x03BF;&#x03C2;/&#x03AD;&#x03BE;&#x03BF;&#x03B4;&#x03BF;&#x03C2; &#x03C7;&#x03C1;&#x03AE;&#x03C3;&#x03C4;&#x03B7;.</option>
+<option value="5" data-origPos="R_5">&#x03A6;&#x03C5;&#x03C3;&#x03B9;&#x03BA;&#x03AE; &#x03B4;&#x03B9;&#x03B5;&#x03C5;&#x03B8;&#x03C5;&#x03BD;&#x03C3;&#x03B9;&#x03BF;&#x03B4;&#x03CC;&#x03C4;&#x03B7;&#x03C3;&#x03B7;, &#x03B2;&#x03B1;&#x03C3;&#x03B9;&#x03BA;&#x03CC;&#x03C2; &#x03AD;&#x03BB;&#x03B5;&#x03B3;&#x03C7;&#x03BF;&#x03C2; &#x03C3;&#x03C6;&#x03B1;&#x03BB;&#x03BC;&#x03AC;&#x03C4;&#x03C9;&#x03BD;, &#x03B5;&#x03BA;&#x03C0;&#x03BF;&#x03BC;&#x03C0;&#x03AE;/&#x03BB;&#x03AE;&#x03C8;&#x03B7; &#x03C0;&#x03BB;&#x03B1;&#x03B9;&#x03C3;&#x03AF;&#x03C9;&#x03BD;.</option>
 <option value="6" data-origPos="R_6">&#x039A;&#x03C9;&#x03B4;&#x03B9;&#x03BA;&#x03BF;&#x03C0;&#x03BF;&#x03AF;&#x03B7;&#x03C3;&#x03B7; &#x03C3;&#x03B7;&#x03BC;&#x03AC;&#x03C4;&#x03C9;&#x03BD;, &#x03C6;&#x03C5;&#x03C3;&#x03B9;&#x03BA;&#x03AC; &#x03BC;&#x03AD;&#x03C3;&#x03B1;,<br />&#x03C3;&#x03C5;&#x03BD;&#x03B4;&#x03B5;&#x03C4;&#x03AE;&#x03C1;&#x03B5;&#x03C2; (connectors).</option>
+<option value="4" data-origPos="R_4">&#x039B;&#x03BF;&#x03B3;&#x03B9;&#x03BA;&#x03AE; &#x03B4;&#x03B9;&#x03B5;&#x03C5;&#x03B8;&#x03C5;&#x03BD;&#x03C3;&#x03B9;&#x03BF;&#x03B4;&#x03CC;&#x03C4;&#x03B7;&#x03C3;&#x03B7;, &#x03B4;&#x03C1;&#x03BF;&#x03BC;&#x03BF;&#x03BB;&#x03CC;&#x03B3;&#x03B7;&#x03C3;&#x03B7;</option>
+<option value="0" data-origPos="R_0">&#x03A0;&#x03B1;&#x03C1;&#x03BF;&#x03C7;&#x03AE; &#x03C5;&#x03C0;&#x03B7;&#x03C1;&#x03B5;&#x03C3;&#x03B9;&#x03CE;&#x03BD; &#x03C3;&#x03C4;&#x03B9;&#x03C2; &#x03B5;&#x03C6;&#x03B1;&#x03C1;&#x03BC;&#x03BF;&#x03B3;&#x03AD;&#x03C2; &#x03C4;&#x03BF;&#x03C5; &#x03C7;&#x03C1;&#x03AE;&#x03C3;&#x03C4;&#x03B7;.</option>
+<option value="1" data-origPos="R_1">&#x039C;&#x03B5;&#x03C4;&#x03AC;&#x03C6;&#x03C1;&#x03B1;&#x03C3;&#x03B7;/&#x03BC;&#x03B5;&#x03C4;&#x03B1;&#x03C4;&#x03C1;&#x03BF;&#x03C0;&#x03AE;, &#x03C3;&#x03C5;&#x03BC;&#x03C0;&#x03AF;&#x03B5;&#x03C3;&#x03B7; &#x03B4;&#x03B5;&#x03B4;&#x03BF;&#x03BC;&#x03AD;&#x03BD;&#x03C9;&#x03BD;.</option>
 </select>
 </td>
 <td> </td>
@@ -1340,13 +1336,13 @@ function CheckAnswers(){
 <td class="RightItem">
 <select onchange="JsonEx.AlignSelects(2)" id="R_2">
 <option value="-1">???</option>
-<option value="1" data-origPos="R_1">&#x039C;&#x03B5;&#x03C4;&#x03AC;&#x03C6;&#x03C1;&#x03B1;&#x03C3;&#x03B7;/&#x03BC;&#x03B5;&#x03C4;&#x03B1;&#x03C4;&#x03C1;&#x03BF;&#x03C0;&#x03AE;, &#x03C3;&#x03C5;&#x03BC;&#x03C0;&#x03AF;&#x03B5;&#x03C3;&#x03B7; &#x03B4;&#x03B5;&#x03B4;&#x03BF;&#x03BC;&#x03AD;&#x03BD;&#x03C9;&#x03BD;.</option>
-<option value="4" data-origPos="R_4">&#x039B;&#x03BF;&#x03B3;&#x03B9;&#x03BA;&#x03AE; &#x03B4;&#x03B9;&#x03B5;&#x03C5;&#x03B8;&#x03C5;&#x03BD;&#x03C3;&#x03B9;&#x03BF;&#x03B4;&#x03CC;&#x03C4;&#x03B7;&#x03C3;&#x03B7;, &#x03B4;&#x03C1;&#x03BF;&#x03BC;&#x03BF;&#x03BB;&#x03CC;&#x03B3;&#x03B7;&#x03C3;&#x03B7;</option>
-<option value="2" data-origPos="R_2">&#x0394;&#x03B9;&#x03B1;&#x03C7;&#x03B5;&#x03AF;&#x03C1;&#x03B9;&#x03C3;&#x03B7; &#x03C3;&#x03C5;&#x03BD;&#x03CC;&#x03B4;&#x03BF;&#x03C5;, &#x03B5;&#x03AF;&#x03C3;&#x03BF;&#x03B4;&#x03BF;&#x03C2;/&#x03AD;&#x03BE;&#x03BF;&#x03B4;&#x03BF;&#x03C2; &#x03C7;&#x03C1;&#x03AE;&#x03C3;&#x03C4;&#x03B7;.</option>
-<option value="0" data-origPos="R_0">&#x03A0;&#x03B1;&#x03C1;&#x03BF;&#x03C7;&#x03AE; &#x03C5;&#x03C0;&#x03B7;&#x03C1;&#x03B5;&#x03C3;&#x03B9;&#x03CE;&#x03BD; &#x03C3;&#x03C4;&#x03B9;&#x03C2; &#x03B5;&#x03C6;&#x03B1;&#x03C1;&#x03BC;&#x03BF;&#x03B3;&#x03AD;&#x03C2; &#x03C4;&#x03BF;&#x03C5; &#x03C7;&#x03C1;&#x03AE;&#x03C3;&#x03C4;&#x03B7;.</option>
-<option value="5" data-origPos="R_5">&#x03A6;&#x03C5;&#x03C3;&#x03B9;&#x03BA;&#x03AE; &#x03B4;&#x03B9;&#x03B5;&#x03C5;&#x03B8;&#x03C5;&#x03BD;&#x03C3;&#x03B9;&#x03BF;&#x03B4;&#x03CC;&#x03C4;&#x03B7;&#x03C3;&#x03B7;, &#x03B2;&#x03B1;&#x03C3;&#x03B9;&#x03BA;&#x03CC;&#x03C2; &#x03AD;&#x03BB;&#x03B5;&#x03B3;&#x03C7;&#x03BF;&#x03C2; &#x03C3;&#x03C6;&#x03B1;&#x03BB;&#x03BC;&#x03AC;&#x03C4;&#x03C9;&#x03BD;, &#x03B5;&#x03BA;&#x03C0;&#x03BF;&#x03BC;&#x03C0;&#x03AE;/&#x03BB;&#x03AE;&#x03C8;&#x03B7; &#x03C0;&#x03BB;&#x03B1;&#x03B9;&#x03C3;&#x03AF;&#x03C9;&#x03BD;.</option>
 <option value="3" data-origPos="R_3">&#x0395;&#x03C0;&#x03B9;&#x03BA;&#x03BF;&#x03B9;&#x03BD;&#x03C9;&#x03BD;&#x03AF;&#x03B1; &#x03B1;&#x03C0;&#x03CC; &#x03AC;&#x03BA;&#x03C1;&#x03BF; &#x03C3;&#x03B5; &#x03AC;&#x03BA;&#x03C1;&#x03BF; &#x03BC;&#x03B5;&#x03C4;&#x03B1;&#x03BE;&#x03CD; &#x03C0;&#x03C1;&#x03BF;&#x03B3;&#x03C1;&#x03B1;&#x03BC;&#x03BC;&#x03AC;&#x03C4;&#x03C9;&#x03BD;/&#x03B4;&#x03B9;&#x03B5;&#x03C1;&#x03B3;&#x03B1;&#x03C3;&#x03B9;&#x03CE;&#x03BD;.</option>
+<option value="2" data-origPos="R_2">&#x0394;&#x03B9;&#x03B1;&#x03C7;&#x03B5;&#x03AF;&#x03C1;&#x03B9;&#x03C3;&#x03B7; &#x03C3;&#x03C5;&#x03BD;&#x03CC;&#x03B4;&#x03BF;&#x03C5;, &#x03B5;&#x03AF;&#x03C3;&#x03BF;&#x03B4;&#x03BF;&#x03C2;/&#x03AD;&#x03BE;&#x03BF;&#x03B4;&#x03BF;&#x03C2; &#x03C7;&#x03C1;&#x03AE;&#x03C3;&#x03C4;&#x03B7;.</option>
+<option value="5" data-origPos="R_5">&#x03A6;&#x03C5;&#x03C3;&#x03B9;&#x03BA;&#x03AE; &#x03B4;&#x03B9;&#x03B5;&#x03C5;&#x03B8;&#x03C5;&#x03BD;&#x03C3;&#x03B9;&#x03BF;&#x03B4;&#x03CC;&#x03C4;&#x03B7;&#x03C3;&#x03B7;, &#x03B2;&#x03B1;&#x03C3;&#x03B9;&#x03BA;&#x03CC;&#x03C2; &#x03AD;&#x03BB;&#x03B5;&#x03B3;&#x03C7;&#x03BF;&#x03C2; &#x03C3;&#x03C6;&#x03B1;&#x03BB;&#x03BC;&#x03AC;&#x03C4;&#x03C9;&#x03BD;, &#x03B5;&#x03BA;&#x03C0;&#x03BF;&#x03BC;&#x03C0;&#x03AE;/&#x03BB;&#x03AE;&#x03C8;&#x03B7; &#x03C0;&#x03BB;&#x03B1;&#x03B9;&#x03C3;&#x03AF;&#x03C9;&#x03BD;.</option>
 <option value="6" data-origPos="R_6">&#x039A;&#x03C9;&#x03B4;&#x03B9;&#x03BA;&#x03BF;&#x03C0;&#x03BF;&#x03AF;&#x03B7;&#x03C3;&#x03B7; &#x03C3;&#x03B7;&#x03BC;&#x03AC;&#x03C4;&#x03C9;&#x03BD;, &#x03C6;&#x03C5;&#x03C3;&#x03B9;&#x03BA;&#x03AC; &#x03BC;&#x03AD;&#x03C3;&#x03B1;,<br />&#x03C3;&#x03C5;&#x03BD;&#x03B4;&#x03B5;&#x03C4;&#x03AE;&#x03C1;&#x03B5;&#x03C2; (connectors).</option>
+<option value="4" data-origPos="R_4">&#x039B;&#x03BF;&#x03B3;&#x03B9;&#x03BA;&#x03AE; &#x03B4;&#x03B9;&#x03B5;&#x03C5;&#x03B8;&#x03C5;&#x03BD;&#x03C3;&#x03B9;&#x03BF;&#x03B4;&#x03CC;&#x03C4;&#x03B7;&#x03C3;&#x03B7;, &#x03B4;&#x03C1;&#x03BF;&#x03BC;&#x03BF;&#x03BB;&#x03CC;&#x03B3;&#x03B7;&#x03C3;&#x03B7;</option>
+<option value="0" data-origPos="R_0">&#x03A0;&#x03B1;&#x03C1;&#x03BF;&#x03C7;&#x03AE; &#x03C5;&#x03C0;&#x03B7;&#x03C1;&#x03B5;&#x03C3;&#x03B9;&#x03CE;&#x03BD; &#x03C3;&#x03C4;&#x03B9;&#x03C2; &#x03B5;&#x03C6;&#x03B1;&#x03C1;&#x03BC;&#x03BF;&#x03B3;&#x03AD;&#x03C2; &#x03C4;&#x03BF;&#x03C5; &#x03C7;&#x03C1;&#x03AE;&#x03C3;&#x03C4;&#x03B7;.</option>
+<option value="1" data-origPos="R_1">&#x039C;&#x03B5;&#x03C4;&#x03AC;&#x03C6;&#x03C1;&#x03B1;&#x03C3;&#x03B7;/&#x03BC;&#x03B5;&#x03C4;&#x03B1;&#x03C4;&#x03C1;&#x03BF;&#x03C0;&#x03AE;, &#x03C3;&#x03C5;&#x03BC;&#x03C0;&#x03AF;&#x03B5;&#x03C3;&#x03B7; &#x03B4;&#x03B5;&#x03B4;&#x03BF;&#x03BC;&#x03AD;&#x03BD;&#x03C9;&#x03BD;.</option>
 </select>
 </td>
 <td> </td>
@@ -1355,13 +1351,13 @@ function CheckAnswers(){
 <td class="RightItem">
 <select onchange="JsonEx.AlignSelects(3)" id="R_3">
 <option value="-1">???</option>
-<option value="1" data-origPos="R_1">&#x039C;&#x03B5;&#x03C4;&#x03AC;&#x03C6;&#x03C1;&#x03B1;&#x03C3;&#x03B7;/&#x03BC;&#x03B5;&#x03C4;&#x03B1;&#x03C4;&#x03C1;&#x03BF;&#x03C0;&#x03AE;, &#x03C3;&#x03C5;&#x03BC;&#x03C0;&#x03AF;&#x03B5;&#x03C3;&#x03B7; &#x03B4;&#x03B5;&#x03B4;&#x03BF;&#x03BC;&#x03AD;&#x03BD;&#x03C9;&#x03BD;.</option>
-<option value="4" data-origPos="R_4">&#x039B;&#x03BF;&#x03B3;&#x03B9;&#x03BA;&#x03AE; &#x03B4;&#x03B9;&#x03B5;&#x03C5;&#x03B8;&#x03C5;&#x03BD;&#x03C3;&#x03B9;&#x03BF;&#x03B4;&#x03CC;&#x03C4;&#x03B7;&#x03C3;&#x03B7;, &#x03B4;&#x03C1;&#x03BF;&#x03BC;&#x03BF;&#x03BB;&#x03CC;&#x03B3;&#x03B7;&#x03C3;&#x03B7;</option>
-<option value="2" data-origPos="R_2">&#x0394;&#x03B9;&#x03B1;&#x03C7;&#x03B5;&#x03AF;&#x03C1;&#x03B9;&#x03C3;&#x03B7; &#x03C3;&#x03C5;&#x03BD;&#x03CC;&#x03B4;&#x03BF;&#x03C5;, &#x03B5;&#x03AF;&#x03C3;&#x03BF;&#x03B4;&#x03BF;&#x03C2;/&#x03AD;&#x03BE;&#x03BF;&#x03B4;&#x03BF;&#x03C2; &#x03C7;&#x03C1;&#x03AE;&#x03C3;&#x03C4;&#x03B7;.</option>
-<option value="0" data-origPos="R_0">&#x03A0;&#x03B1;&#x03C1;&#x03BF;&#x03C7;&#x03AE; &#x03C5;&#x03C0;&#x03B7;&#x03C1;&#x03B5;&#x03C3;&#x03B9;&#x03CE;&#x03BD; &#x03C3;&#x03C4;&#x03B9;&#x03C2; &#x03B5;&#x03C6;&#x03B1;&#x03C1;&#x03BC;&#x03BF;&#x03B3;&#x03AD;&#x03C2; &#x03C4;&#x03BF;&#x03C5; &#x03C7;&#x03C1;&#x03AE;&#x03C3;&#x03C4;&#x03B7;.</option>
-<option value="5" data-origPos="R_5">&#x03A6;&#x03C5;&#x03C3;&#x03B9;&#x03BA;&#x03AE; &#x03B4;&#x03B9;&#x03B5;&#x03C5;&#x03B8;&#x03C5;&#x03BD;&#x03C3;&#x03B9;&#x03BF;&#x03B4;&#x03CC;&#x03C4;&#x03B7;&#x03C3;&#x03B7;, &#x03B2;&#x03B1;&#x03C3;&#x03B9;&#x03BA;&#x03CC;&#x03C2; &#x03AD;&#x03BB;&#x03B5;&#x03B3;&#x03C7;&#x03BF;&#x03C2; &#x03C3;&#x03C6;&#x03B1;&#x03BB;&#x03BC;&#x03AC;&#x03C4;&#x03C9;&#x03BD;, &#x03B5;&#x03BA;&#x03C0;&#x03BF;&#x03BC;&#x03C0;&#x03AE;/&#x03BB;&#x03AE;&#x03C8;&#x03B7; &#x03C0;&#x03BB;&#x03B1;&#x03B9;&#x03C3;&#x03AF;&#x03C9;&#x03BD;.</option>
 <option value="3" data-origPos="R_3">&#x0395;&#x03C0;&#x03B9;&#x03BA;&#x03BF;&#x03B9;&#x03BD;&#x03C9;&#x03BD;&#x03AF;&#x03B1; &#x03B1;&#x03C0;&#x03CC; &#x03AC;&#x03BA;&#x03C1;&#x03BF; &#x03C3;&#x03B5; &#x03AC;&#x03BA;&#x03C1;&#x03BF; &#x03BC;&#x03B5;&#x03C4;&#x03B1;&#x03BE;&#x03CD; &#x03C0;&#x03C1;&#x03BF;&#x03B3;&#x03C1;&#x03B1;&#x03BC;&#x03BC;&#x03AC;&#x03C4;&#x03C9;&#x03BD;/&#x03B4;&#x03B9;&#x03B5;&#x03C1;&#x03B3;&#x03B1;&#x03C3;&#x03B9;&#x03CE;&#x03BD;.</option>
+<option value="2" data-origPos="R_2">&#x0394;&#x03B9;&#x03B1;&#x03C7;&#x03B5;&#x03AF;&#x03C1;&#x03B9;&#x03C3;&#x03B7; &#x03C3;&#x03C5;&#x03BD;&#x03CC;&#x03B4;&#x03BF;&#x03C5;, &#x03B5;&#x03AF;&#x03C3;&#x03BF;&#x03B4;&#x03BF;&#x03C2;/&#x03AD;&#x03BE;&#x03BF;&#x03B4;&#x03BF;&#x03C2; &#x03C7;&#x03C1;&#x03AE;&#x03C3;&#x03C4;&#x03B7;.</option>
+<option value="5" data-origPos="R_5">&#x03A6;&#x03C5;&#x03C3;&#x03B9;&#x03BA;&#x03AE; &#x03B4;&#x03B9;&#x03B5;&#x03C5;&#x03B8;&#x03C5;&#x03BD;&#x03C3;&#x03B9;&#x03BF;&#x03B4;&#x03CC;&#x03C4;&#x03B7;&#x03C3;&#x03B7;, &#x03B2;&#x03B1;&#x03C3;&#x03B9;&#x03BA;&#x03CC;&#x03C2; &#x03AD;&#x03BB;&#x03B5;&#x03B3;&#x03C7;&#x03BF;&#x03C2; &#x03C3;&#x03C6;&#x03B1;&#x03BB;&#x03BC;&#x03AC;&#x03C4;&#x03C9;&#x03BD;, &#x03B5;&#x03BA;&#x03C0;&#x03BF;&#x03BC;&#x03C0;&#x03AE;/&#x03BB;&#x03AE;&#x03C8;&#x03B7; &#x03C0;&#x03BB;&#x03B1;&#x03B9;&#x03C3;&#x03AF;&#x03C9;&#x03BD;.</option>
 <option value="6" data-origPos="R_6">&#x039A;&#x03C9;&#x03B4;&#x03B9;&#x03BA;&#x03BF;&#x03C0;&#x03BF;&#x03AF;&#x03B7;&#x03C3;&#x03B7; &#x03C3;&#x03B7;&#x03BC;&#x03AC;&#x03C4;&#x03C9;&#x03BD;, &#x03C6;&#x03C5;&#x03C3;&#x03B9;&#x03BA;&#x03AC; &#x03BC;&#x03AD;&#x03C3;&#x03B1;,<br />&#x03C3;&#x03C5;&#x03BD;&#x03B4;&#x03B5;&#x03C4;&#x03AE;&#x03C1;&#x03B5;&#x03C2; (connectors).</option>
+<option value="4" data-origPos="R_4">&#x039B;&#x03BF;&#x03B3;&#x03B9;&#x03BA;&#x03AE; &#x03B4;&#x03B9;&#x03B5;&#x03C5;&#x03B8;&#x03C5;&#x03BD;&#x03C3;&#x03B9;&#x03BF;&#x03B4;&#x03CC;&#x03C4;&#x03B7;&#x03C3;&#x03B7;, &#x03B4;&#x03C1;&#x03BF;&#x03BC;&#x03BF;&#x03BB;&#x03CC;&#x03B3;&#x03B7;&#x03C3;&#x03B7;</option>
+<option value="0" data-origPos="R_0">&#x03A0;&#x03B1;&#x03C1;&#x03BF;&#x03C7;&#x03AE; &#x03C5;&#x03C0;&#x03B7;&#x03C1;&#x03B5;&#x03C3;&#x03B9;&#x03CE;&#x03BD; &#x03C3;&#x03C4;&#x03B9;&#x03C2; &#x03B5;&#x03C6;&#x03B1;&#x03C1;&#x03BC;&#x03BF;&#x03B3;&#x03AD;&#x03C2; &#x03C4;&#x03BF;&#x03C5; &#x03C7;&#x03C1;&#x03AE;&#x03C3;&#x03C4;&#x03B7;.</option>
+<option value="1" data-origPos="R_1">&#x039C;&#x03B5;&#x03C4;&#x03AC;&#x03C6;&#x03C1;&#x03B1;&#x03C3;&#x03B7;/&#x03BC;&#x03B5;&#x03C4;&#x03B1;&#x03C4;&#x03C1;&#x03BF;&#x03C0;&#x03AE;, &#x03C3;&#x03C5;&#x03BC;&#x03C0;&#x03AF;&#x03B5;&#x03C3;&#x03B7; &#x03B4;&#x03B5;&#x03B4;&#x03BF;&#x03BC;&#x03AD;&#x03BD;&#x03C9;&#x03BD;.</option>
 </select>
 </td>
 <td> </td>
@@ -1370,13 +1366,13 @@ function CheckAnswers(){
 <td class="RightItem">
 <select onchange="JsonEx.AlignSelects(4)" id="R_4">
 <option value="-1">???</option>
-<option value="1" data-origPos="R_1">&#x039C;&#x03B5;&#x03C4;&#x03AC;&#x03C6;&#x03C1;&#x03B1;&#x03C3;&#x03B7;/&#x03BC;&#x03B5;&#x03C4;&#x03B1;&#x03C4;&#x03C1;&#x03BF;&#x03C0;&#x03AE;, &#x03C3;&#x03C5;&#x03BC;&#x03C0;&#x03AF;&#x03B5;&#x03C3;&#x03B7; &#x03B4;&#x03B5;&#x03B4;&#x03BF;&#x03BC;&#x03AD;&#x03BD;&#x03C9;&#x03BD;.</option>
-<option value="4" data-origPos="R_4">&#x039B;&#x03BF;&#x03B3;&#x03B9;&#x03BA;&#x03AE; &#x03B4;&#x03B9;&#x03B5;&#x03C5;&#x03B8;&#x03C5;&#x03BD;&#x03C3;&#x03B9;&#x03BF;&#x03B4;&#x03CC;&#x03C4;&#x03B7;&#x03C3;&#x03B7;, &#x03B4;&#x03C1;&#x03BF;&#x03BC;&#x03BF;&#x03BB;&#x03CC;&#x03B3;&#x03B7;&#x03C3;&#x03B7;</option>
-<option value="2" data-origPos="R_2">&#x0394;&#x03B9;&#x03B1;&#x03C7;&#x03B5;&#x03AF;&#x03C1;&#x03B9;&#x03C3;&#x03B7; &#x03C3;&#x03C5;&#x03BD;&#x03CC;&#x03B4;&#x03BF;&#x03C5;, &#x03B5;&#x03AF;&#x03C3;&#x03BF;&#x03B4;&#x03BF;&#x03C2;/&#x03AD;&#x03BE;&#x03BF;&#x03B4;&#x03BF;&#x03C2; &#x03C7;&#x03C1;&#x03AE;&#x03C3;&#x03C4;&#x03B7;.</option>
-<option value="0" data-origPos="R_0">&#x03A0;&#x03B1;&#x03C1;&#x03BF;&#x03C7;&#x03AE; &#x03C5;&#x03C0;&#x03B7;&#x03C1;&#x03B5;&#x03C3;&#x03B9;&#x03CE;&#x03BD; &#x03C3;&#x03C4;&#x03B9;&#x03C2; &#x03B5;&#x03C6;&#x03B1;&#x03C1;&#x03BC;&#x03BF;&#x03B3;&#x03AD;&#x03C2; &#x03C4;&#x03BF;&#x03C5; &#x03C7;&#x03C1;&#x03AE;&#x03C3;&#x03C4;&#x03B7;.</option>
-<option value="5" data-origPos="R_5">&#x03A6;&#x03C5;&#x03C3;&#x03B9;&#x03BA;&#x03AE; &#x03B4;&#x03B9;&#x03B5;&#x03C5;&#x03B8;&#x03C5;&#x03BD;&#x03C3;&#x03B9;&#x03BF;&#x03B4;&#x03CC;&#x03C4;&#x03B7;&#x03C3;&#x03B7;, &#x03B2;&#x03B1;&#x03C3;&#x03B9;&#x03BA;&#x03CC;&#x03C2; &#x03AD;&#x03BB;&#x03B5;&#x03B3;&#x03C7;&#x03BF;&#x03C2; &#x03C3;&#x03C6;&#x03B1;&#x03BB;&#x03BC;&#x03AC;&#x03C4;&#x03C9;&#x03BD;, &#x03B5;&#x03BA;&#x03C0;&#x03BF;&#x03BC;&#x03C0;&#x03AE;/&#x03BB;&#x03AE;&#x03C8;&#x03B7; &#x03C0;&#x03BB;&#x03B1;&#x03B9;&#x03C3;&#x03AF;&#x03C9;&#x03BD;.</option>
 <option value="3" data-origPos="R_3">&#x0395;&#x03C0;&#x03B9;&#x03BA;&#x03BF;&#x03B9;&#x03BD;&#x03C9;&#x03BD;&#x03AF;&#x03B1; &#x03B1;&#x03C0;&#x03CC; &#x03AC;&#x03BA;&#x03C1;&#x03BF; &#x03C3;&#x03B5; &#x03AC;&#x03BA;&#x03C1;&#x03BF; &#x03BC;&#x03B5;&#x03C4;&#x03B1;&#x03BE;&#x03CD; &#x03C0;&#x03C1;&#x03BF;&#x03B3;&#x03C1;&#x03B1;&#x03BC;&#x03BC;&#x03AC;&#x03C4;&#x03C9;&#x03BD;/&#x03B4;&#x03B9;&#x03B5;&#x03C1;&#x03B3;&#x03B1;&#x03C3;&#x03B9;&#x03CE;&#x03BD;.</option>
+<option value="2" data-origPos="R_2">&#x0394;&#x03B9;&#x03B1;&#x03C7;&#x03B5;&#x03AF;&#x03C1;&#x03B9;&#x03C3;&#x03B7; &#x03C3;&#x03C5;&#x03BD;&#x03CC;&#x03B4;&#x03BF;&#x03C5;, &#x03B5;&#x03AF;&#x03C3;&#x03BF;&#x03B4;&#x03BF;&#x03C2;/&#x03AD;&#x03BE;&#x03BF;&#x03B4;&#x03BF;&#x03C2; &#x03C7;&#x03C1;&#x03AE;&#x03C3;&#x03C4;&#x03B7;.</option>
+<option value="5" data-origPos="R_5">&#x03A6;&#x03C5;&#x03C3;&#x03B9;&#x03BA;&#x03AE; &#x03B4;&#x03B9;&#x03B5;&#x03C5;&#x03B8;&#x03C5;&#x03BD;&#x03C3;&#x03B9;&#x03BF;&#x03B4;&#x03CC;&#x03C4;&#x03B7;&#x03C3;&#x03B7;, &#x03B2;&#x03B1;&#x03C3;&#x03B9;&#x03BA;&#x03CC;&#x03C2; &#x03AD;&#x03BB;&#x03B5;&#x03B3;&#x03C7;&#x03BF;&#x03C2; &#x03C3;&#x03C6;&#x03B1;&#x03BB;&#x03BC;&#x03AC;&#x03C4;&#x03C9;&#x03BD;, &#x03B5;&#x03BA;&#x03C0;&#x03BF;&#x03BC;&#x03C0;&#x03AE;/&#x03BB;&#x03AE;&#x03C8;&#x03B7; &#x03C0;&#x03BB;&#x03B1;&#x03B9;&#x03C3;&#x03AF;&#x03C9;&#x03BD;.</option>
 <option value="6" data-origPos="R_6">&#x039A;&#x03C9;&#x03B4;&#x03B9;&#x03BA;&#x03BF;&#x03C0;&#x03BF;&#x03AF;&#x03B7;&#x03C3;&#x03B7; &#x03C3;&#x03B7;&#x03BC;&#x03AC;&#x03C4;&#x03C9;&#x03BD;, &#x03C6;&#x03C5;&#x03C3;&#x03B9;&#x03BA;&#x03AC; &#x03BC;&#x03AD;&#x03C3;&#x03B1;,<br />&#x03C3;&#x03C5;&#x03BD;&#x03B4;&#x03B5;&#x03C4;&#x03AE;&#x03C1;&#x03B5;&#x03C2; (connectors).</option>
+<option value="4" data-origPos="R_4">&#x039B;&#x03BF;&#x03B3;&#x03B9;&#x03BA;&#x03AE; &#x03B4;&#x03B9;&#x03B5;&#x03C5;&#x03B8;&#x03C5;&#x03BD;&#x03C3;&#x03B9;&#x03BF;&#x03B4;&#x03CC;&#x03C4;&#x03B7;&#x03C3;&#x03B7;, &#x03B4;&#x03C1;&#x03BF;&#x03BC;&#x03BF;&#x03BB;&#x03CC;&#x03B3;&#x03B7;&#x03C3;&#x03B7;</option>
+<option value="0" data-origPos="R_0">&#x03A0;&#x03B1;&#x03C1;&#x03BF;&#x03C7;&#x03AE; &#x03C5;&#x03C0;&#x03B7;&#x03C1;&#x03B5;&#x03C3;&#x03B9;&#x03CE;&#x03BD; &#x03C3;&#x03C4;&#x03B9;&#x03C2; &#x03B5;&#x03C6;&#x03B1;&#x03C1;&#x03BC;&#x03BF;&#x03B3;&#x03AD;&#x03C2; &#x03C4;&#x03BF;&#x03C5; &#x03C7;&#x03C1;&#x03AE;&#x03C3;&#x03C4;&#x03B7;.</option>
+<option value="1" data-origPos="R_1">&#x039C;&#x03B5;&#x03C4;&#x03AC;&#x03C6;&#x03C1;&#x03B1;&#x03C3;&#x03B7;/&#x03BC;&#x03B5;&#x03C4;&#x03B1;&#x03C4;&#x03C1;&#x03BF;&#x03C0;&#x03AE;, &#x03C3;&#x03C5;&#x03BC;&#x03C0;&#x03AF;&#x03B5;&#x03C3;&#x03B7; &#x03B4;&#x03B5;&#x03B4;&#x03BF;&#x03BC;&#x03AD;&#x03BD;&#x03C9;&#x03BD;.</option>
 </select>
 </td>
 <td> </td>
@@ -1385,13 +1381,13 @@ function CheckAnswers(){
 <td class="RightItem">
 <select onchange="JsonEx.AlignSelects(5)" id="R_5">
 <option value="-1">???</option>
-<option value="1" data-origPos="R_1">&#x039C;&#x03B5;&#x03C4;&#x03AC;&#x03C6;&#x03C1;&#x03B1;&#x03C3;&#x03B7;/&#x03BC;&#x03B5;&#x03C4;&#x03B1;&#x03C4;&#x03C1;&#x03BF;&#x03C0;&#x03AE;, &#x03C3;&#x03C5;&#x03BC;&#x03C0;&#x03AF;&#x03B5;&#x03C3;&#x03B7; &#x03B4;&#x03B5;&#x03B4;&#x03BF;&#x03BC;&#x03AD;&#x03BD;&#x03C9;&#x03BD;.</option>
-<option value="4" data-origPos="R_4">&#x039B;&#x03BF;&#x03B3;&#x03B9;&#x03BA;&#x03AE; &#x03B4;&#x03B9;&#x03B5;&#x03C5;&#x03B8;&#x03C5;&#x03BD;&#x03C3;&#x03B9;&#x03BF;&#x03B4;&#x03CC;&#x03C4;&#x03B7;&#x03C3;&#x03B7;, &#x03B4;&#x03C1;&#x03BF;&#x03BC;&#x03BF;&#x03BB;&#x03CC;&#x03B3;&#x03B7;&#x03C3;&#x03B7;</option>
-<option value="2" data-origPos="R_2">&#x0394;&#x03B9;&#x03B1;&#x03C7;&#x03B5;&#x03AF;&#x03C1;&#x03B9;&#x03C3;&#x03B7; &#x03C3;&#x03C5;&#x03BD;&#x03CC;&#x03B4;&#x03BF;&#x03C5;, &#x03B5;&#x03AF;&#x03C3;&#x03BF;&#x03B4;&#x03BF;&#x03C2;/&#x03AD;&#x03BE;&#x03BF;&#x03B4;&#x03BF;&#x03C2; &#x03C7;&#x03C1;&#x03AE;&#x03C3;&#x03C4;&#x03B7;.</option>
-<option value="0" data-origPos="R_0">&#x03A0;&#x03B1;&#x03C1;&#x03BF;&#x03C7;&#x03AE; &#x03C5;&#x03C0;&#x03B7;&#x03C1;&#x03B5;&#x03C3;&#x03B9;&#x03CE;&#x03BD; &#x03C3;&#x03C4;&#x03B9;&#x03C2; &#x03B5;&#x03C6;&#x03B1;&#x03C1;&#x03BC;&#x03BF;&#x03B3;&#x03AD;&#x03C2; &#x03C4;&#x03BF;&#x03C5; &#x03C7;&#x03C1;&#x03AE;&#x03C3;&#x03C4;&#x03B7;.</option>
-<option value="5" data-origPos="R_5">&#x03A6;&#x03C5;&#x03C3;&#x03B9;&#x03BA;&#x03AE; &#x03B4;&#x03B9;&#x03B5;&#x03C5;&#x03B8;&#x03C5;&#x03BD;&#x03C3;&#x03B9;&#x03BF;&#x03B4;&#x03CC;&#x03C4;&#x03B7;&#x03C3;&#x03B7;, &#x03B2;&#x03B1;&#x03C3;&#x03B9;&#x03BA;&#x03CC;&#x03C2; &#x03AD;&#x03BB;&#x03B5;&#x03B3;&#x03C7;&#x03BF;&#x03C2; &#x03C3;&#x03C6;&#x03B1;&#x03BB;&#x03BC;&#x03AC;&#x03C4;&#x03C9;&#x03BD;, &#x03B5;&#x03BA;&#x03C0;&#x03BF;&#x03BC;&#x03C0;&#x03AE;/&#x03BB;&#x03AE;&#x03C8;&#x03B7; &#x03C0;&#x03BB;&#x03B1;&#x03B9;&#x03C3;&#x03AF;&#x03C9;&#x03BD;.</option>
 <option value="3" data-origPos="R_3">&#x0395;&#x03C0;&#x03B9;&#x03BA;&#x03BF;&#x03B9;&#x03BD;&#x03C9;&#x03BD;&#x03AF;&#x03B1; &#x03B1;&#x03C0;&#x03CC; &#x03AC;&#x03BA;&#x03C1;&#x03BF; &#x03C3;&#x03B5; &#x03AC;&#x03BA;&#x03C1;&#x03BF; &#x03BC;&#x03B5;&#x03C4;&#x03B1;&#x03BE;&#x03CD; &#x03C0;&#x03C1;&#x03BF;&#x03B3;&#x03C1;&#x03B1;&#x03BC;&#x03BC;&#x03AC;&#x03C4;&#x03C9;&#x03BD;/&#x03B4;&#x03B9;&#x03B5;&#x03C1;&#x03B3;&#x03B1;&#x03C3;&#x03B9;&#x03CE;&#x03BD;.</option>
+<option value="2" data-origPos="R_2">&#x0394;&#x03B9;&#x03B1;&#x03C7;&#x03B5;&#x03AF;&#x03C1;&#x03B9;&#x03C3;&#x03B7; &#x03C3;&#x03C5;&#x03BD;&#x03CC;&#x03B4;&#x03BF;&#x03C5;, &#x03B5;&#x03AF;&#x03C3;&#x03BF;&#x03B4;&#x03BF;&#x03C2;/&#x03AD;&#x03BE;&#x03BF;&#x03B4;&#x03BF;&#x03C2; &#x03C7;&#x03C1;&#x03AE;&#x03C3;&#x03C4;&#x03B7;.</option>
+<option value="5" data-origPos="R_5">&#x03A6;&#x03C5;&#x03C3;&#x03B9;&#x03BA;&#x03AE; &#x03B4;&#x03B9;&#x03B5;&#x03C5;&#x03B8;&#x03C5;&#x03BD;&#x03C3;&#x03B9;&#x03BF;&#x03B4;&#x03CC;&#x03C4;&#x03B7;&#x03C3;&#x03B7;, &#x03B2;&#x03B1;&#x03C3;&#x03B9;&#x03BA;&#x03CC;&#x03C2; &#x03AD;&#x03BB;&#x03B5;&#x03B3;&#x03C7;&#x03BF;&#x03C2; &#x03C3;&#x03C6;&#x03B1;&#x03BB;&#x03BC;&#x03AC;&#x03C4;&#x03C9;&#x03BD;, &#x03B5;&#x03BA;&#x03C0;&#x03BF;&#x03BC;&#x03C0;&#x03AE;/&#x03BB;&#x03AE;&#x03C8;&#x03B7; &#x03C0;&#x03BB;&#x03B1;&#x03B9;&#x03C3;&#x03AF;&#x03C9;&#x03BD;.</option>
 <option value="6" data-origPos="R_6">&#x039A;&#x03C9;&#x03B4;&#x03B9;&#x03BA;&#x03BF;&#x03C0;&#x03BF;&#x03AF;&#x03B7;&#x03C3;&#x03B7; &#x03C3;&#x03B7;&#x03BC;&#x03AC;&#x03C4;&#x03C9;&#x03BD;, &#x03C6;&#x03C5;&#x03C3;&#x03B9;&#x03BA;&#x03AC; &#x03BC;&#x03AD;&#x03C3;&#x03B1;,<br />&#x03C3;&#x03C5;&#x03BD;&#x03B4;&#x03B5;&#x03C4;&#x03AE;&#x03C1;&#x03B5;&#x03C2; (connectors).</option>
+<option value="4" data-origPos="R_4">&#x039B;&#x03BF;&#x03B3;&#x03B9;&#x03BA;&#x03AE; &#x03B4;&#x03B9;&#x03B5;&#x03C5;&#x03B8;&#x03C5;&#x03BD;&#x03C3;&#x03B9;&#x03BF;&#x03B4;&#x03CC;&#x03C4;&#x03B7;&#x03C3;&#x03B7;, &#x03B4;&#x03C1;&#x03BF;&#x03BC;&#x03BF;&#x03BB;&#x03CC;&#x03B3;&#x03B7;&#x03C3;&#x03B7;</option>
+<option value="0" data-origPos="R_0">&#x03A0;&#x03B1;&#x03C1;&#x03BF;&#x03C7;&#x03AE; &#x03C5;&#x03C0;&#x03B7;&#x03C1;&#x03B5;&#x03C3;&#x03B9;&#x03CE;&#x03BD; &#x03C3;&#x03C4;&#x03B9;&#x03C2; &#x03B5;&#x03C6;&#x03B1;&#x03C1;&#x03BC;&#x03BF;&#x03B3;&#x03AD;&#x03C2; &#x03C4;&#x03BF;&#x03C5; &#x03C7;&#x03C1;&#x03AE;&#x03C3;&#x03C4;&#x03B7;.</option>
+<option value="1" data-origPos="R_1">&#x039C;&#x03B5;&#x03C4;&#x03AC;&#x03C6;&#x03C1;&#x03B1;&#x03C3;&#x03B7;/&#x03BC;&#x03B5;&#x03C4;&#x03B1;&#x03C4;&#x03C1;&#x03BF;&#x03C0;&#x03AE;, &#x03C3;&#x03C5;&#x03BC;&#x03C0;&#x03AF;&#x03B5;&#x03C3;&#x03B7; &#x03B4;&#x03B5;&#x03B4;&#x03BF;&#x03BC;&#x03AD;&#x03BD;&#x03C9;&#x03BD;.</option>
 </select>
 </td>
 <td> </td>
@@ -1400,13 +1396,13 @@ function CheckAnswers(){
 <td class="RightItem">
 <select onchange="JsonEx.AlignSelects(6)" id="R_6">
 <option value="-1">???</option>
-<option value="1" data-origPos="R_1">&#x039C;&#x03B5;&#x03C4;&#x03AC;&#x03C6;&#x03C1;&#x03B1;&#x03C3;&#x03B7;/&#x03BC;&#x03B5;&#x03C4;&#x03B1;&#x03C4;&#x03C1;&#x03BF;&#x03C0;&#x03AE;, &#x03C3;&#x03C5;&#x03BC;&#x03C0;&#x03AF;&#x03B5;&#x03C3;&#x03B7; &#x03B4;&#x03B5;&#x03B4;&#x03BF;&#x03BC;&#x03AD;&#x03BD;&#x03C9;&#x03BD;.</option>
-<option value="4" data-origPos="R_4">&#x039B;&#x03BF;&#x03B3;&#x03B9;&#x03BA;&#x03AE; &#x03B4;&#x03B9;&#x03B5;&#x03C5;&#x03B8;&#x03C5;&#x03BD;&#x03C3;&#x03B9;&#x03BF;&#x03B4;&#x03CC;&#x03C4;&#x03B7;&#x03C3;&#x03B7;, &#x03B4;&#x03C1;&#x03BF;&#x03BC;&#x03BF;&#x03BB;&#x03CC;&#x03B3;&#x03B7;&#x03C3;&#x03B7;</option>
-<option value="2" data-origPos="R_2">&#x0394;&#x03B9;&#x03B1;&#x03C7;&#x03B5;&#x03AF;&#x03C1;&#x03B9;&#x03C3;&#x03B7; &#x03C3;&#x03C5;&#x03BD;&#x03CC;&#x03B4;&#x03BF;&#x03C5;, &#x03B5;&#x03AF;&#x03C3;&#x03BF;&#x03B4;&#x03BF;&#x03C2;/&#x03AD;&#x03BE;&#x03BF;&#x03B4;&#x03BF;&#x03C2; &#x03C7;&#x03C1;&#x03AE;&#x03C3;&#x03C4;&#x03B7;.</option>
-<option value="0" data-origPos="R_0">&#x03A0;&#x03B1;&#x03C1;&#x03BF;&#x03C7;&#x03AE; &#x03C5;&#x03C0;&#x03B7;&#x03C1;&#x03B5;&#x03C3;&#x03B9;&#x03CE;&#x03BD; &#x03C3;&#x03C4;&#x03B9;&#x03C2; &#x03B5;&#x03C6;&#x03B1;&#x03C1;&#x03BC;&#x03BF;&#x03B3;&#x03AD;&#x03C2; &#x03C4;&#x03BF;&#x03C5; &#x03C7;&#x03C1;&#x03AE;&#x03C3;&#x03C4;&#x03B7;.</option>
-<option value="5" data-origPos="R_5">&#x03A6;&#x03C5;&#x03C3;&#x03B9;&#x03BA;&#x03AE; &#x03B4;&#x03B9;&#x03B5;&#x03C5;&#x03B8;&#x03C5;&#x03BD;&#x03C3;&#x03B9;&#x03BF;&#x03B4;&#x03CC;&#x03C4;&#x03B7;&#x03C3;&#x03B7;, &#x03B2;&#x03B1;&#x03C3;&#x03B9;&#x03BA;&#x03CC;&#x03C2; &#x03AD;&#x03BB;&#x03B5;&#x03B3;&#x03C7;&#x03BF;&#x03C2; &#x03C3;&#x03C6;&#x03B1;&#x03BB;&#x03BC;&#x03AC;&#x03C4;&#x03C9;&#x03BD;, &#x03B5;&#x03BA;&#x03C0;&#x03BF;&#x03BC;&#x03C0;&#x03AE;/&#x03BB;&#x03AE;&#x03C8;&#x03B7; &#x03C0;&#x03BB;&#x03B1;&#x03B9;&#x03C3;&#x03AF;&#x03C9;&#x03BD;.</option>
 <option value="3" data-origPos="R_3">&#x0395;&#x03C0;&#x03B9;&#x03BA;&#x03BF;&#x03B9;&#x03BD;&#x03C9;&#x03BD;&#x03AF;&#x03B1; &#x03B1;&#x03C0;&#x03CC; &#x03AC;&#x03BA;&#x03C1;&#x03BF; &#x03C3;&#x03B5; &#x03AC;&#x03BA;&#x03C1;&#x03BF; &#x03BC;&#x03B5;&#x03C4;&#x03B1;&#x03BE;&#x03CD; &#x03C0;&#x03C1;&#x03BF;&#x03B3;&#x03C1;&#x03B1;&#x03BC;&#x03BC;&#x03AC;&#x03C4;&#x03C9;&#x03BD;/&#x03B4;&#x03B9;&#x03B5;&#x03C1;&#x03B3;&#x03B1;&#x03C3;&#x03B9;&#x03CE;&#x03BD;.</option>
+<option value="2" data-origPos="R_2">&#x0394;&#x03B9;&#x03B1;&#x03C7;&#x03B5;&#x03AF;&#x03C1;&#x03B9;&#x03C3;&#x03B7; &#x03C3;&#x03C5;&#x03BD;&#x03CC;&#x03B4;&#x03BF;&#x03C5;, &#x03B5;&#x03AF;&#x03C3;&#x03BF;&#x03B4;&#x03BF;&#x03C2;/&#x03AD;&#x03BE;&#x03BF;&#x03B4;&#x03BF;&#x03C2; &#x03C7;&#x03C1;&#x03AE;&#x03C3;&#x03C4;&#x03B7;.</option>
+<option value="5" data-origPos="R_5">&#x03A6;&#x03C5;&#x03C3;&#x03B9;&#x03BA;&#x03AE; &#x03B4;&#x03B9;&#x03B5;&#x03C5;&#x03B8;&#x03C5;&#x03BD;&#x03C3;&#x03B9;&#x03BF;&#x03B4;&#x03CC;&#x03C4;&#x03B7;&#x03C3;&#x03B7;, &#x03B2;&#x03B1;&#x03C3;&#x03B9;&#x03BA;&#x03CC;&#x03C2; &#x03AD;&#x03BB;&#x03B5;&#x03B3;&#x03C7;&#x03BF;&#x03C2; &#x03C3;&#x03C6;&#x03B1;&#x03BB;&#x03BC;&#x03AC;&#x03C4;&#x03C9;&#x03BD;, &#x03B5;&#x03BA;&#x03C0;&#x03BF;&#x03BC;&#x03C0;&#x03AE;/&#x03BB;&#x03AE;&#x03C8;&#x03B7; &#x03C0;&#x03BB;&#x03B1;&#x03B9;&#x03C3;&#x03AF;&#x03C9;&#x03BD;.</option>
 <option value="6" data-origPos="R_6">&#x039A;&#x03C9;&#x03B4;&#x03B9;&#x03BA;&#x03BF;&#x03C0;&#x03BF;&#x03AF;&#x03B7;&#x03C3;&#x03B7; &#x03C3;&#x03B7;&#x03BC;&#x03AC;&#x03C4;&#x03C9;&#x03BD;, &#x03C6;&#x03C5;&#x03C3;&#x03B9;&#x03BA;&#x03AC; &#x03BC;&#x03AD;&#x03C3;&#x03B1;,<br />&#x03C3;&#x03C5;&#x03BD;&#x03B4;&#x03B5;&#x03C4;&#x03AE;&#x03C1;&#x03B5;&#x03C2; (connectors).</option>
+<option value="4" data-origPos="R_4">&#x039B;&#x03BF;&#x03B3;&#x03B9;&#x03BA;&#x03AE; &#x03B4;&#x03B9;&#x03B5;&#x03C5;&#x03B8;&#x03C5;&#x03BD;&#x03C3;&#x03B9;&#x03BF;&#x03B4;&#x03CC;&#x03C4;&#x03B7;&#x03C3;&#x03B7;, &#x03B4;&#x03C1;&#x03BF;&#x03BC;&#x03BF;&#x03BB;&#x03CC;&#x03B3;&#x03B7;&#x03C3;&#x03B7;</option>
+<option value="0" data-origPos="R_0">&#x03A0;&#x03B1;&#x03C1;&#x03BF;&#x03C7;&#x03AE; &#x03C5;&#x03C0;&#x03B7;&#x03C1;&#x03B5;&#x03C3;&#x03B9;&#x03CE;&#x03BD; &#x03C3;&#x03C4;&#x03B9;&#x03C2; &#x03B5;&#x03C6;&#x03B1;&#x03C1;&#x03BC;&#x03BF;&#x03B3;&#x03AD;&#x03C2; &#x03C4;&#x03BF;&#x03C5; &#x03C7;&#x03C1;&#x03AE;&#x03C3;&#x03C4;&#x03B7;.</option>
+<option value="1" data-origPos="R_1">&#x039C;&#x03B5;&#x03C4;&#x03AC;&#x03C6;&#x03C1;&#x03B1;&#x03C3;&#x03B7;/&#x03BC;&#x03B5;&#x03C4;&#x03B1;&#x03C4;&#x03C1;&#x03BF;&#x03C0;&#x03AE;, &#x03C3;&#x03C5;&#x03BC;&#x03C0;&#x03AF;&#x03B5;&#x03C3;&#x03B7; &#x03B4;&#x03B5;&#x03B4;&#x03BF;&#x03BC;&#x03AD;&#x03BD;&#x03C9;&#x03BD;.</option>
 </select>
 </td>
 <td> </td>
@@ -1417,7 +1413,7 @@ function CheckAnswers(){
 
 </div>
 
-<button id="CheckButton2" class="FuncButton" onclick="CheckAnswers()">&#160;Check&#160;</button>
+<button id="CheckButton2" class="FuncButton" onclick="CheckAnswers()">&#160;&#x0388;&#x03BB;&#x03B5;&#x03B3;&#x03C7;&#x03BF;&#x03C2;&#160;</button>
 
 </div>
 
@@ -1434,15 +1430,11 @@ function CheckAnswers(){
 <div class="NavButtonBar" id="BottomNavBar">
 
 
-<button class="NavButton" onclick="history.back(); return false;">&lt;=</button>
 
 
-
-<button class="NavButton" onclick="location='index.htm'; return false;"> &#x03A0;&#x03B5;&#x03C1;&#x03B9;&#x03B5;&#x03C7;&#x03CC;&#x03BC;&#x03B5;&#x03BD;&#x03B1; </button>
-
+<button class="NavButton" onclick="location='index.html'; return false;"> &#x0395;&#x03C0;&#x03B9;&#x03C3;&#x03C4;&#x03C1;&#x03BF;&#x03C6;&#x03AE; &#x03C3;&#x03C4;&#x03B7;&#x03BD; &#x03B1;&#x03C1;&#x03C7;&#x03B9;&#x03BA;&#x03AE; &#x03C3;&#x03B5;&#x03BB;&#x03AF;&#x03B4;&#x03B1; </button>
 
 
-<button class="NavButton" onclick="location='match_exersise_2.htm'; return false;">=&gt;</button>
 
 
 </div>
