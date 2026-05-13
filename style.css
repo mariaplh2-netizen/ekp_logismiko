@@ -1,0 +1,83 @@
+/* style.css */
+
+/* Γενικές ρυθμίσεις σώματος */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #2c3e50);
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+}
+
+/* Επικεφαλίδα (Header) */
+header {
+    padding: 40px 20px;
+    font-size: 2.2em;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+}
+
+/* Κύριο πλαίσιο περιεχομένου */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Κάρτες (Cards) */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); /* Για Safari */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Εφέ στο Hover */
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    background: rgba(160, 59, 59, 0.3);
+    box-shadow: 0 15px 35px rgba(160, 59, 59, 0.4);
+    border: 1px solid rgba(160, 59, 59, 0.5);
+}
+
+/* Εικονίδια μέσα στις κάρτες */
+.icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+/* Κείμενο κάρτας */
+.card span {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+/* Mobile Friendly Ρυθμίσεις */
+@media (max-width: 600px) {
+    header {
+        font-size: 1.8em;
+    }
+    .card {
+        width: 160px;
+        height: 160px;
+    }
+}
